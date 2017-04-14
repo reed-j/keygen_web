@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<script language="JavaScript">
+    function login()
+    {
+        var login=document.iAccInput.iName.value;
+        var password=document.iAccInput.iAccID.value;
+        var trueName='123';
+        var truePassword='123';
+        if ((login==trueName) && (password==truePassword))
+        {
+            document.location.href='https://toster.ru/q/256293';
+        }
+        else
+        {
+            alert("Error! Try again");
+        }
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<center>
+    <body>
+    <form name="iAccInput">
+
+        <td align="RIGHT"><font size="3">Name
+            <br>
+        <td><input type="TEXT" name="iName" maxlength="15" size="20">
+            <br><br>Password</font></td>
+        <br><input name="iAccID" maxlength="15" height="50" size="20"></td>
+        <br><br>
+        <td><input type="BUTTON" value=" Login " onclick="login()" height="40" width="50"></td>
+        <br>
+
+
+    </form>
+    </body>
+</center>
+</html>
